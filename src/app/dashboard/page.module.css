@@ -1,0 +1,15 @@
+.dashboard {
+  padding: 16px;
+  color: black;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.signOutButton {
+  margin-top: 16px;
+  background-color: #c42828;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
