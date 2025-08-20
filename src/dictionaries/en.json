@@ -1,0 +1,13 @@
+{
+  "loginPage": {
+    "title": "Requirements prioritization",
+    "loginText": "Log in",
+    "continueWithGoogle": "Continue with Google",
+    "textInformation":"An app for prioritizing the Tech Centre's requirements.",
+    "english":"English",
+    "spanish":"Spainsh"
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  }
+}

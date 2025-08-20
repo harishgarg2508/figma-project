@@ -1,0 +1,121 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main_outerBox {
+  color: black;
+   width: 810px;
+  height: 302px;
+}
+.main_innerBox {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  background: white;
+  color: black;
+  width: 810px;
+  height: 256px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.logo_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 142px;
+  width: 352px;
+  margin-top: 57px;
+  margin-bottom: 57px;
+  margin-left: 48px;
+}
+.logo_text {
+  font: open-sans;
+  color: black;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 22px;
+
+  height: 32px;
+  width: 352px;
+}
+.logo {
+  background-image: url("/app-logo.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+.text_information {
+  
+  font: open-sans;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: Regular;
+  height: 20px;
+  width: 352px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #757575;
+}
+.information_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 60px;
+  width: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.continue_with_google_button_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 82px;
+  width: 352px;
+}
+
+.login_text_in_continue_with_google_button_box {
+
+  color: black;
+  font: open-sans;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: Regular;
+  height: 24px;
+  width: 299.0625px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.continue_with_google_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #9E9E9E;
+  border-radius: 8px;
+  height: 42px;
+  width: 300px;
+  border-radius: 8px;
+  color: #757575;
+}
