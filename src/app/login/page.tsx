@@ -1,10 +1,9 @@
-import { Locale } from "@/i18n-config";
 import styles from "./page.module.css";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { GoogleSignInButton } from "@/components/google-signin-button";
-import LanguageSwitcher from "@/components/language-switcher";
+import { GoogleSignInButton } from "@/components/signin-button/google-signin-button";
+import LanguageSwitcher from "@/components/language-switcher/language-switcher";
 import { useTranslations } from "next-intl";
 
 export default function Login() {
@@ -15,34 +14,27 @@ export default function Login() {
       <Stack className={styles.main_outerBox}>
         <Box className={styles.main_innerBox}>
           <Box className={styles.logo_text_container}>
-            <Box className={styles.logo}>
-            </Box>
+            <Box className={styles.logo}></Box>
             <Box className={styles.information_container}>
-              <p className={styles.logo_text}>{t("title")}</p>
-              <p className={styles.text_information}>
-                {t("textInformation")}
-              </p>
+              <Box className={styles.logo_text}>{t("title")}</Box>
+              <Box className={styles.text_information}>{t("textInformation")}</Box>
             </Box>
           </Box>
           <Box className={styles.continue_with_google_button_box}>
             <Box>
-              <Typography
+              <Box
                 component="h6"
-                variant="h6"
+               
                 className={styles.login_text_in_continue_with_google_button_box}
               >
                 {t("loginText")}
-              </Typography>
+              </Box>
             </Box>
-            <Box>
-              <GoogleSignInButton className={styles.continue_with_google_button}>
-                {t("continueWithGoogle")}
-              </GoogleSignInButton>
-            </Box>
+            <GoogleSignInButton  />
           </Box>
         </Box>
 
-        <Box className={styles.footer}>
+        <Box className={styles.languageSwitcher}>
           <LanguageSwitcher />
         </Box>
       </Stack>

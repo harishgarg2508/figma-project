@@ -4,8 +4,8 @@
     "loginText": "Log in",
     "continueWithGoogle": "Continue with Google",
     "textInformation":"An app for prioritizing the Tech Centre's requirements.",
-    "english":"English",
-    "spanish":"Spainsh"
+    "english":"English (United States)",
+    "spanish":"Spanish"
   },
   "languageSwitcher": {
     "label": "Language"

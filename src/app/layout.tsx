@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { ClientProviders } from "@/components/providers";
-import {getLocale} from 'next-intl/server';
- 
-
+import { getLocale, getMessages } from "next-intl/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+// const openSans = Open_Sans({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  display: 'swap',
 });
 
 const geistMono = Geist_Mono({
@@ -28,13 +36,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ClientProviders locale={locale}>
-          {children}
-        </ClientProviders>
+        <ClientProviders locale={locale} messages={messages}>{children}</ClientProviders>
       </body>
     </html>
   );

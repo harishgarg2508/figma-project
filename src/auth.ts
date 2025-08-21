@@ -7,17 +7,20 @@ export const authOptions:NextAuthOptions = {
         CredentialsProvider({
             name: "Credentials",
             credentials:{
+                name:{label:"Name", type:"text"},
                 email:{label:"Email", type:"text"},
                 password:{label:"Password", type:"password"}
             },
             async authorize(credentials) {
-                if (!credentials?.email || !credentials?.password) {
+                if (!credentials?.email || !credentials?.password) {    
                     throw new Error("Email and password are required");
                 }
                 try {
-                    const user = { id: "1", name: "Test User", email: credentials.email };
-                   //user authetication logic here, e.g., check against a database
-                    // If user is not found or credentials are invalid, return null
+                    const name = credentials.name
+                    const email = credentials.email
+                    const user = { id: "1", email, name };
+
+                    //backend
                     return user;
                 } catch (error) {
                      return null;
