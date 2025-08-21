@@ -46,8 +46,11 @@
 .logo_text {
   color: black;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 32px;
   width: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
 .logo {
@@ -63,6 +66,10 @@
   font-size: 12px;
   font-weight: 400;
   color: #757575;
+  line-height: 20px;
+  vertical-align: middle;
+  letter-spacing: 0%;
+  
 }
 
 .information_container {
@@ -75,7 +82,6 @@
 .continue_with_google_button_box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 16px;
   flex: 1;
@@ -87,6 +93,11 @@
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  font-style: regular;
+
 }
 
 .continue_with_google_button {

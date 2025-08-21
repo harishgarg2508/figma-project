@@ -1,11 +1,13 @@
-.languageSwitcher{
-    
-    color: #424242;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    vertical-align: middle; 
-    min-width: 174px;
-    min-height: 24px;
+.languageSwitcher {
+  font-family: "Open Sans";
+  color: yellow;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  min-width: 174px;
+  min-height: 24px;
+  background-color: transparent;
 }
+

@@ -1,25 +1,96 @@
 "use client";
 
-
+import React from "react";
+import {  AppBar,  Toolbar,  Box,  Paper,  IconButton,  Typography, Button,  Stack,} from "@mui/material";
+import {
+  Menu as MenuIcon,
+  PersonOutlineOutlined as PersonIcon,
+} from "@mui/icons-material";
 import styles from "./page.module.css";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useSession } from "next-auth/react";
-import { AppBar, Box } from "@mui/material";
-import MenuAppBar from "@/components/appbar/appbar";
 
 export default function Dashboard() {
-  const { data: session, status, update } = useSession();
-
+  let userName = "";
+  const { data: session, status } = useSession();
   if (status === "loading") {
     return <div>Loading...</div>;
   }
-
   if (session) {
-    const userName = session.user?.name || "User";
+    userName = session.user?.name || "Guest";
   }
+
   return (
     <Box className={styles.mainContainer}>
-      <MenuAppBar />
+      <AppBar position="static" className={styles.appBar}>
+        <Toolbar className={styles.toolbar}>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            className={styles.hamburgerButton}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Box
+            
+            component="span"
+            className={styles.appBarTitle}
+          >
+            Requirements prioritization
+          </Box>
+          <Stack direction="row" alignItems="center" gap={1}>
+            <AccountCircleIcon />
+            <Typography  className={styles.userName}>
+              {userName}
+            </Typography>
+          </Stack>
+          <IconButton className={styles.userMenuButton}>
+            <KeyboardArrowDownIcon  className={styles.userMenuButton}/>
+          </IconButton>
+        </Toolbar>
+      </AppBar>
 
+      <Box className={styles.sideBarAndMainContent}>
+        <Box className={styles.sideBar}>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+          <Box className={styles.personIconContainer}>
+            <PersonIcon />
+          </Box>
+        </Box>
+
+        <Box className={styles.mainContent}>
+          <Box className={styles.mainContentContainer}>
+            <Box className={styles.mainContentHeaderContainer}>
+              <Box component="h1" className={styles.mainContentTitle}>
+                Requirements list
+              </Box>
+
+              <Button variant="contained" className={styles.createNewButton}>
+                CREATE NEW
+              </Button>
+            </Box>
+
+            <Paper elevation={1} className={styles.mainContentBody}>
+            </Paper>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }

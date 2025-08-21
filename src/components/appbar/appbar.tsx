@@ -34,48 +34,7 @@ export default function MenuAppBar() {
         </Toolbar>
       </AppBar>
 
-        <Box className={style.sideBarAndMainContent}>
-          <Box className={style.sideBar}>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-            <Box className={style.personIconContainer}>
-              <PersonOutlineOutlinedIcon />
-            </Box>
-          </Box>
-          <Box className={style.mainContent}>
-                <Box className={style.mainContentContainer}>
-                    <Box className={style.mainContentHeaderContainer}>
-                        <Box component='h1' className={style.mainContentTitle}>
-                            Requirements list
-                        </Box>
-                        <Box className={style.createNewButton} component='button'>
-                            CREATE NEW
-
-                        </Box>
-
-                    </Box>
-                   <Paper className={style.mainContentBody}>
-
-
-                    </Paper>
-
-                </Box>
-
-          </Box>
-        </Box>
+      
     </Box>
   );
 }
