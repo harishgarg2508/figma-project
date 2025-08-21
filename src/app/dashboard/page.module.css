@@ -63,10 +63,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
+  color: #424242;
   cursor: pointer;
-  border-bottom: 1px solid #F0F0F0;
-  transition: background-color 0.2s ease;
 }
 
 .personIconContainer:hover {
@@ -109,19 +107,21 @@
 
 .createNewButton {
   font-size: 14px !important;
+  line-height: 19px;
+  letter-spacing: 0.5%;
+  vertical-align: middle;
+  font-family: 'Open Sans' !important;
   font-weight: 600 !important;
+  color: #FFFFFF;
   min-width: 115px !important;
   height: 36px !important;
   border-radius: 8px !important;
   background-color: #01579B !important;
   text-transform: none !important;
   white-space: nowrap !important;
-  padding: 8px 16px !important;
+  padding: 8px !important;
 }
 
-.createNewButton:hover {
-  background-color: #0277BD !important;
-}
 
 .mainContentBody {
   flex: 1 !important;

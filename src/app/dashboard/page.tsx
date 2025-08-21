@@ -7,9 +7,9 @@ import {
   PersonOutlineOutlined as PersonIcon,
 } from "@mui/icons-material";
 import styles from "./page.module.css";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useSession } from "next-auth/react";
+import BasicMenu from "@/components/menuItems/menu-item";
 
 export default function Dashboard() {
   let userName = "";
@@ -20,6 +20,8 @@ export default function Dashboard() {
   if (session) {
     userName = session.user?.name || "Guest";
   }
+
+
 
   return (
     <Box className={styles.mainContainer}>
@@ -46,9 +48,10 @@ export default function Dashboard() {
               {userName}
             </Typography>
           </Stack>
-          <IconButton className={styles.userMenuButton}>
-            <KeyboardArrowDownIcon  className={styles.userMenuButton}/>
-          </IconButton>
+          <Box className={styles.userMenuButton}>
+
+            <BasicMenu />
+          </Box>
         </Toolbar>
       </AppBar>
 

@@ -18,7 +18,7 @@ export function GoogleSignInButton() {
 
       const result = await signIn("credentials", {
         name: "Harish Garg",
-        email: "testuser@gmail.com",
+        email: "testuserppppppppppppppppp@gmail.com",
         password: "TestUser",
         redirect: false,
       });
