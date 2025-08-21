@@ -13,3 +13,8 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.mainContainer {
+  background-color: #F5F5F5;
+  overflow: hidden;
+
+}

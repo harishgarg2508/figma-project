@@ -16,7 +16,7 @@ const geistSans = Geist({
 
 const openSans = Open_Sans({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  weight: ['300', '400', '600', '700'],
   display: 'swap',
 });
 
