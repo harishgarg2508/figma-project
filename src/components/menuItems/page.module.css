@@ -1,0 +1,91 @@
+.profileDropdown {
+    width: 240px;
+    min-height: 149px;
+    border-radius: 8px;
+
+}
+.mainContainer{
+    padding: 0px 0px;
+    margin: 0px;
+
+}
+/* 
+.tooltip{
+    width: 180px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 16px;
+    font-style: regular;
+    letter-spacing: 0%;
+    color: #303030CC;
+    vertical-align: middle;
+    display: flex;
+    top: 144px;
+    left: 1716px;
+    flex-flow: horizontal;
+
+} */
+
+
+.listItemInnerBox{
+
+    width: 192px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0px;
+}
+
+.primaryText {
+    font-weight: 400;
+    font-family: 'Open Sans';
+    line-height: 24px;
+    font-size: 16px;
+    font-style: regular;
+    letter-spacing: 0%;
+    color: #424242;
+
+}
+
+.secondaryText {
+    text-overflow: ellipsis;
+    font-weight: 400;
+    overflow: hidden;
+    font-family: 'Open Sans';
+    line-height: 20px;
+    font-size: 14px;
+    font-style: regular;
+    letter-spacing: 0%;
+    color: #757575;
+}
+.logoutButton{
+    width: 240px;
+    height: 64px;
+    padding: 8px 0px;
+
+
+}
+.logoutBox{
+    width: 200px;
+    height: 48px;
+    padding: 8px 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.logoutText{
+    font-weight: 400;
+    font-family: 'Open Sans';
+    line-height: 24px;
+    font-size: 16px;
+    font-style: regular;
+    letter-spacing: 0%;
+    color: #424242;
+}
+
+.logoutIcon{
+    height: 20px;
+    width: 20px;
+    color: #424242;
+}
